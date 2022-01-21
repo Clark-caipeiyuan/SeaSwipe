@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/empty_error_image"
+        android:layout_width="wrap_content"
+        android:layout_height="205dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/icon_list_net_error" />
+
+    <TextView
+        android:id="@+id/empty_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="网络似乎出现了点问题，请重新加载"
+        android:textColor="#999"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/empty_error_button"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/error_again_btn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="刷新重试"
+        android:textColor="#fff"
+        android:textSize="17dp" />
+
+</RelativeLayout>
+
+

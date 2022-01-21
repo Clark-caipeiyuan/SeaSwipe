@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4680ff</color>
+    <color name="colorPrimaryDark">#ff4680ff</color>
+    <color name="colorAccent">#0088dd</color>
+
+
+    <color name="category_tab_text">#838383</color>
+    <color name="activity_bg">#eee</color>
+</resources>

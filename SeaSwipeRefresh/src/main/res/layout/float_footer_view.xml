@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="bottom|center_horizontal"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:id="@+id/bottom_loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/float_footer_bg"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="加载中..."
+            android:textColor="#888"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_loading_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/float_footer_bg"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/end_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已经没有更多了哦"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="#888"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_loading_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/float_footer_bg"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="数据加载出错,稍后重试"
+            android:textColor="#f44336"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
